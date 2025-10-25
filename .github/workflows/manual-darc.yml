@@ -32,3 +32,5 @@ jobs:
         git add mad-log/*.md
         git commit -m "🔍 D.A.R.C. scan on $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
         git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/roninazure/project-darc.git HEAD:main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
