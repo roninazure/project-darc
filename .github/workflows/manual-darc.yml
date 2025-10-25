@@ -18,19 +18,18 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        python3 -m pip install --upgrade pip
         pip install -r requirements.txt || true  # Skip if no dependencies
 
     - name: Run D.A.R.C. scan
       run: |
-        python .github/scripts/darc_scan.py
+        python3 .github/scripts/darc_scan.py
 
     - name: Commit and push changes
       run: |
         git config user.name "CodexDaemon"
         git config user.email "roninazure@gmail.com"
         git add mad-log/*.md
-        git commit -m "🔍 D.A.R.C. scan on $(date +'%Y-%m-%d')" || echo "No changes to commit"
-        git push
-      env:
+        git commit -m "🔍 D.A.R.C. scan on $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
+        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/roninazure/project-darc.git HEAD:mainenv:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
