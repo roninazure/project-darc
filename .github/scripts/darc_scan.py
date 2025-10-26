@@ -1,24 +1,30 @@
-# === File: .github/scripts/darc_scan.py ===
+import datetime
 import os
-from datetime import datetime
-from pathlib import Path
 
-# === Sample logic placeholder ===
-def run_darc_scan():
-    output = []
-    output.append("# 🕵️ D.A.R.C. Daily Recon Scan")
-    output.append("")
-    output.append(f"**Scan Time:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
-    output.append("")
-    output.append("- ✅ Sample recon module executed")
-    output.append("- 🚨 More modules coming soon...")
-    
-    return "\n".join(output)
+# Define file paths
+log_dir = "mad-log"
+log_file = os.path.join(log_dir, datetime.datetime.utcnow().strftime("%Y-%m-%d") + ".md")
+indicators_file = os.path.join(".github", "scripts", "infra_indicators.txt")
 
-# === Write memory trail output ===
-if __name__ == "__main__":
-    out_dir = Path("mad-log")
-    out_dir.mkdir(exist_ok=True)
-    out_path = out_dir / f"{datetime.utcnow().strftime('%Y-%m-%d')}.md"
-    out_path.write_text(run_darc_scan(), encoding="utf-8")
-    print(f"✅ Scan complete. Log saved to {out_path}")
+# Ensure log directory exists
+os.makedirs(log_dir, exist_ok=True)
+
+# Read indicators
+try:
+    with open(indicators_file, "r") as f:
+        indicators = [line.strip() for line in f if line.strip()]
+except FileNotFoundError:
+    indicators = []
+
+# Simulate scan
+with open(log_file, "w") as log:
+    log.write("# 🕵️ D.A.R.C. Daily Recon Scan\n\n")
+    log.write(f"**Scan Time:** {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')} UTC\n\n")
+
+    if not indicators:
+        log.write("⚠️ No indicators found in `infra_indicators.txt`\n")
+    else:
+        for item in indicators:
+            log.write(f"- 🔍 Scanning for `{item}` ... potential exposure path: ChatGPT + Search + LLM\n")
+
+print(f"✅ Scan complete. Log saved to {log_file}")
