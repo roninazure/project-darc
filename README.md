@@ -20,7 +20,7 @@ This repo is a **public-facing proof-of-concept** that:
 
 ---
 
-## 🧪 Live Recon Sample (2025-10-26)
+## 🧪 Live Recon Artifacts (2025-10-26)
 
 ```txt
 # 🕵️ D.A.R.C. Daily Recon Scan
