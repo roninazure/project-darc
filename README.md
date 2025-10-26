@@ -23,13 +23,17 @@ This repo is a **public-facing proof-of-concept** that:
 ## 🧪 Live Recon Artifacts (2025-10-26)
 
 ```txt
-# 🕵️ D.A.R.C. Daily Recon Scan
+ 🕵️ D.A.R.C. Daily Recon Scan
 Scan Time: 2025-10-26 02:23 UTC
 
-- 🔍 OPENAI_API_KEY — potential secret exposure
-- 🔍 staging-db01 — internal hostname matched
-- 🔍 confidential2025.docx — sensitive file pattern
-- 🔍 10.149.162.0/24 — internal subnet range flagged
+These are the **most severe leak indicators** detected from today's scan.  
+Risk scores are based on likelihood of LLM propagation + exploitability.
+
+- 🔍 OPENAI_API_KEY — risk score 10/10 [KEY]
+- 🔍 BEGIN PRIVATE KEY — risk score 10/10 [SECRET]
+- 🔍 sandbox-api-key — risk score 9/10 [KEY]
+- 🔍 gpt_token_v3 — risk score 9/10 [KEY]
+- 🔍 admin_password_hash — risk score 9/10 [SECRET]
 
 🚫 Don’t test D.A.R.C. with your secrets.  
 It might already know them.
