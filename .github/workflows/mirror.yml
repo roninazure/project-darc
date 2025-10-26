@@ -19,7 +19,7 @@ jobs:
     - name: Setup SSH key for push
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.PUBLIC_REPO_PRIVATE_KEY }}" > ~/.ssh/github
+        echo "${{ secrets.PUBLIC_REPO_DEPLOY_KEY }}" > ~/.ssh/github
         chmod 600 ~/.ssh/github
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         chmod 644 ~/.ssh/known_hosts
