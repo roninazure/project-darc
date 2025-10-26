@@ -10,17 +10,17 @@ Public showcase powered by `CodexDaemon` — private core remains secure.
 
 > “You didn’t leak your infrastructure to ChatGPT... right?”
 
-**Project D.A.R.C.** is a **mad-scientist-grade surveillance system** that detects whether sensitive infrastructure (IPs, tokens, domains, code, credentials) has **leaked into public LLMs** such as ChatGPT, Gemini, Claude, or Copilot.
+Project D.A.R.C. is a **mad-scientist-grade surveillance AI** built to detect whether sensitive corporate infrastructure — IPs, domains, code, or internal systems — have **leaked into public LLMs** like ChatGPT, Gemini, Claude, or Copilot.
 
 This repo is a **public-facing proof-of-concept** that:
-- 📡 Runs daily AI recon scans via GitHub Actions
-- 🔍 Searches for private indicators in public LLM surfaces
-- 🧠 Logs potential threats in [`mad-log/`](./mad-log)
-- 🔒 Keeps all scanning logic secured in a **private backend**
+- 📡 Runs live `D.A.R.C.` scans using GitHub Actions
+- 🧠 Shows real-time threat recon and leak attempts
+- 🔍 Displays results in the [`mad-log/`](./mad-log) directory
+- 🧱 Keeps all scanning logic locked in a **private backend brain**
 
 ---
 
-## 🧪 Live Recon Sample — `2025-10-26`
+## 🧪 Live Recon Sample (2025-10-26)
 
 ```txt
 # 🕵️ D.A.R.C. Daily Recon Scan
@@ -30,8 +30,6 @@ Scan Time: 2025-10-26 02:23 UTC
 - 🔍 staging-db01 — internal hostname matched
 - 🔍 confidential2025.docx — sensitive file pattern
 - 🔍 10.149.162.0/24 — internal subnet range flagged
-
-→ Full scan: [mad-log/2025-10-26.md](./mad-log/2025-10-26.md)
 
 🚫 Don’t test D.A.R.C. with your secrets.  
 It might already know them.
