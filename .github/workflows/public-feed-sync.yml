@@ -1,0 +1,35 @@
+name: 🔄 DARC Public Feed Mirror
+
+on:
+  schedule:
+    - cron: '0 11 * * *'  # Runs daily at 11:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync-to-public:
+    name: Mirror Public Feed
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout Private Repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: 🧹 Clean workspace
+      run: |
+        rm -rf .github mad-log/README_template.md .venv __pycache__ darc_scan.py .gitignore
+
+    - name: 📁 Prepare Redacted Files
+      run: |
+        mkdir -p public/mad-log
+        cp README.md public/
+        cp mad-log/*.md public/mad-log/
+
+    - name: 🚀 Push to Public Repo
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.GH_TOKEN }}
+        external_repository: roninazure/project-darc-feed
+        publish_dir: ./public
+        publish_branch: main
