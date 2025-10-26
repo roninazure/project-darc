@@ -1,0 +1,40 @@
+name: DARC Public Feed Mirror
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mirror-public-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Private Repo
+      uses: actions/checkout@v3
+
+    - name: Prepare Redacted Files
+      run: |
+        mkdir -p mirror-feed
+        cp -r redacted-feed/* mirror-feed/
+
+    - name: Setup SSH key for push
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.PUBLIC_REPO_PRIVATE_KEY }}" > ~/.ssh/github
+        chmod 600 ~/.ssh/github
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        chmod 644 ~/.ssh/known_hosts
+
+    - name: Push to Public Repo
+      run: |
+        git config --global user.name "CodexDaemon"
+        git config --global user.email "roninazure@gmail.com"
+
+        GIT_SSH_COMMAND="ssh -i ~/.ssh/github -o StrictHostKeyChecking=no" \
+        git clone git@github.com:roninazure/project-darc-feed.git mirror-feed-out
+
+        cp -R mirror-feed/* mirror-feed-out/
+        cd mirror-feed-out
+
+        git add .
+        git commit -m "🔁 Public feed sync from D.A.R.C. at $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes"
+        git push || echo "Nothing to push"
