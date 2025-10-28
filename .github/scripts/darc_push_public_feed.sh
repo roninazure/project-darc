@@ -3,7 +3,8 @@ set -e
 
 echo "🛰️ Syncing README.md to project-darc-feed..."
 
-PRIVATE_REPO_DIR="$(pwd)"
+# Resolve absolute root of repo (2 levels up from script)
+PRIVATE_REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 REPO_DIR="$PRIVATE_REPO_DIR/mirror-out"
 BRANCH="main"
 KEY_PATH="$PRIVATE_REPO_DIR/testkey"
@@ -14,9 +15,10 @@ if [ ! -f "$KEY_PATH" ]; then
   exit 1
 fi
 
-# Clone public repo fresh every time
+# Clone public repo fresh
 rm -rf "$REPO_DIR"
-git clone git@github.com:roninazure/project-darc-feed.git "$REPO_DIR"
+GIT_SSH_COMMAND="ssh -i $KEY_PATH -o StrictHostKeyChecking=no" \
+  git clone git@github.com:roninazure/project-darc-feed.git "$REPO_DIR"
 
 # Copy README
 cp "$PRIVATE_REPO_DIR/README.md" "$REPO_DIR/README.md"
@@ -26,7 +28,7 @@ cd "$REPO_DIR"
 git config user.name "CodexDaemon"
 git config user.email "roninazure@gmail.com"
 
-# Commit & Push
+# Commit & push
 git add README.md
 git commit -m "🛰️ Auto-sync from private DARC [$(date -u)]" || echo "Nothing to commit."
 GIT_SSH_COMMAND="ssh -i $KEY_PATH -o StrictHostKeyChecking=no" git push origin "$BRANCH"
