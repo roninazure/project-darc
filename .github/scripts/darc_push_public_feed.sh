@@ -7,7 +7,7 @@ echo "🛰️ Syncing README.md to project-darc-feed..."
 PRIVATE_REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 REPO_DIR="$PRIVATE_REPO_DIR/mirror-out"
 BRANCH="main"
-KEY_PATH="$PRIVATE_REPO_DIR/testkey"
+KEY_PATH="$PWD/testkey"
 
 # Check key exists
 if [ ! -f "$KEY_PATH" ]; then
