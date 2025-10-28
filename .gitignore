@@ -1,0 +1,9 @@
+# Secrets & private keys (NEVER COMMIT)
+darc_feed_sync_key
+testkey
+
+# Python venv
+.venv/
+
+# Any stray base64 tests or outputs
+*.txt

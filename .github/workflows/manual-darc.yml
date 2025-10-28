@@ -1,36 +1,35 @@
-name: Manual D.A.R.C. Scan
+name: DARC Public Feed Mirror
 
 on:
   workflow_dispatch:
 
 jobs:
-  darc-scan:
+  mirror-public-feed:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout Private Repo
       uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-
-    - name: Install dependencies
+    - name: Setup SSH Key for Push
       run: |
-        python3 -m pip install --upgrade pip
-        pip install -r requirements.txt || true  # Skip if no dependencies
+        mkdir -p ~/.ssh
+        echo "${{ secrets.PUBLIC_REPO_PRIVATE_KEY }}" > ~/.ssh/github
+        chmod 600 ~/.ssh/github
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        chmod 644 ~/.ssh/known_hosts
 
-    - name: Run D.A.R.C. scan
+    - name: Clone Public Repo
       run: |
-        python3 .github/scripts/darc_scan.py
+        git config --global user.name "CodexDaemon"
+        git config --global user.email "roninazure@gmail.com"
+        GIT_SSH_COMMAND="ssh -i ~/.ssh/github -o StrictHostKeyChecking=no" \
+        git clone git@github.com:roninazure/project-darc-feed.git public_repo
 
-    - name: Commit and push changes
+    - name: Sync README.md
       run: |
-        git config user.name "CodexDaemon"
-        git config user.email "roninazure@gmail.com"
-        git add mad-log/*.md
-        git commit -m "🔍 D.A.R.C. scan on $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
-        git push origin HEAD
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        cp README.md public_repo/README.md
+        cd public_repo
+        git add README.md
+        git commit -m "🔁 Public feed sync from D.A.R.C. at $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes"
+        GIT_SSH_COMMAND="ssh -i ~/.ssh/github -o StrictHostKeyChecking=no" git push
