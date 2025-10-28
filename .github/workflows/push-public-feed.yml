@@ -13,11 +13,10 @@ jobs:
       - name: 📦 Checkout repo
         uses: actions/checkout@v3
 
-      - name: 🔐 Set SSH key
+      - name: 🔐 Create SSH Key File
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DARC_SYNC_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.DARC_SYNC_KEY }}" > testkey
+          chmod 600 testkey
 
       - name: 🛰️ Run sync script
         run: bash .github/scripts/darc_push_public_feed.sh

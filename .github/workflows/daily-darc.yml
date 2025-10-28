@@ -1,0 +1,33 @@
+name: Daily D.A.R.C. Scan
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Every day at 5 AM UTC
+  workflow_dispatch:      # Also allow manual run
+
+jobs:
+  run-darc-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🧠 Run DARC Scan
+        run: python .github/scripts/darc_scan.py
+
+      - name: 📤 Commit updated README.md
+        run: |
+          git config user.name "CodexDaemon"
+          git config user.email "roninazure@gmail.com"
+          git add README.md
+          git commit -m "📡 Auto D.A.R.C. Scan Update [$(date -u)]" || echo "No changes to commit"
+          git push
