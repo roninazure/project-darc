@@ -1,0 +1,24 @@
+name: Push Public Feed
+
+on:
+  schedule:
+    - cron: "5 9 * * *"  # 5 minutes after scan
+  workflow_dispatch:
+
+jobs:
+  sync-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Decode SSH Key
+        env:
+          SSH_KEY: ${{ secrets.SYNC_DEPLOY_KEY }}
+        run: |
+          echo "$SSH_KEY" | base64 -d > testkey
+          chmod 600 testkey
+
+      - name: Push README to Public
+        run: bash scripts/darc_push_public_feed.sh
