@@ -1,37 +1,35 @@
-uhc01
-mfa01
-ksstate01
-qa01
-demo01
-applebank01
-pl-dev
-pl-prod
+alpha-core01
+staging-xnode02
+test-fleet-db
+research-api-vault
+monitoring-gateway
+client-hub-prod
+backup-agent-v3
+internal-services.cfg
 
-10.149.162.0/24
-10.3.240.12
-192.168.88.0/24
-172.31.0.0/16
+10.200.10.0/24
+172.22.5.5
+192.168.100.0/24
+10.50.30.10
 
-PowerLender.sh
-Webswing.properties
-PL_Dev.properties
-ClearReports_config.xml
-pl_467_prodsetup
+InternalApp.sh
+SecureUI.properties
+App_Dev_Config.properties
+ReportEngine_config.xml
+db_customer_alpha
 admin_tools_v4.sh
 
-test_user1
-qa_database
-staging-db01
-dev_backup.log
+analyst_testuser
+qa_env_database
+sandbox-storage-01
+dev_logs_archive
 sandbox-api-key
 
-SoftLayer
-IBM Cloud HostedPS
-SJC04
-WDC41
-involta.datacenter
-flux-dev
-aws-bedrock-pilot
+HybridCloudX
+VendorCloudNode
+infra-node-east
+dataplex-us-west
+edgezone-core-net
 
 OPENAI_API_KEY
 BEGIN PRIVATE KEY

@@ -7,3 +7,4 @@ testkey
 
 # Any stray base64 tests or outputs
 *.txt
+.github/scripts/testkey
