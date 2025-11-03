@@ -60,6 +60,7 @@ Risk scores estimate likelihood of LLM propagation + exploitability.
 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]  
 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
 
+```markdown
 🚫 Don’t test D.A.R.C. with your secrets.  
 It might already know them.
 
@@ -69,4 +70,3 @@ It might already know them.
   <sup>⚠️ No real secrets are used. Public output is safe.</sup>
 </div>
 ```
-
