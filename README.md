@@ -59,6 +59,7 @@ Risk scores estimate likelihood of LLM propagation + exploitability.
 🔍 sandbox-api-key        — risk score  9/10 🌍🔴 [KEY]  
 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]  
 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
+```
 
 🚫 Don’t test D.A.R.C. with your secrets.  
 It might already know them.
@@ -68,5 +69,3 @@ It might already know them.
   <br><br>
   <sup>⚠️ No real secrets are used. Public output is safe.</sup>
 </div>
-```
-
