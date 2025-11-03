@@ -14,7 +14,7 @@
 <div align="center">
 
 > ❝ You didn’t leak your infrastructure to ChatGPT… right? ❞  
-> <sub><sup>— Internal Memo, 2025</sup></sub>
+> <sup>— Internal Memo, 2025</sub>
 
 </div>
 
@@ -65,7 +65,7 @@ Risk scores estimate likelihood of LLM propagation + exploitability.
 It might already know them.
 
 <div align="center">
-  <sub><sup>© 2025 RoninAzure • Powered by CodexDaemon</sup></sub>  
+  <sub>© 2025 RoninAzure • Powered by CodexDaemon</sub>  
   <br><br>
-  <sup>⚠️ No real secrets are used. Public output is safe.</sup>
+  <sup>⚠️ No real secrets are used. Public output is safe.⚠️ </sup>
 </div>
