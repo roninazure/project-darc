@@ -9,11 +9,14 @@
 
 </div>
 
----
+<br>
+
 <div align="center">
   <p><em>❝ You didn’t leak your infrastructure to ChatGPT… right? ❞</em></p>
   <sub><sup>— Internal Memo – National Vision 2025</sup></sub>
 </div>
+
+<br>
 
 ---
 
@@ -42,7 +45,7 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 ---
 
 ## 🧪 Live Recon Artifacts  
-<sup>Last Scan: 2025-10-28</sub>
+<sub><sup>Last Scan: 2025-10-28</sup></sub>
 
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan  
@@ -56,13 +59,12 @@ Risk scores estimate likelihood of LLM propagation + exploitability.
 🔍 sandbox-api-key        — risk score  9/10 🌍🔴 [KEY]  
 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]  
 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
-```
 
-🚫 Don’t test D.A.R.C. with your secrets.  
+🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 
 <div align="center">
-  <sub>© 2025 RoninAzure • Powered by CodexDaemon</sub>  
+  <sub>© 2025 RoninAzure • Powered by CodexDaemon</sub>
   <br><br>
   <sup>⚠️ No real secrets are used. Public output is safe.⚠️ </sup>
 </div>
