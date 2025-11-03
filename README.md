@@ -10,14 +10,10 @@
 </div>
 
 ---
-
-<div align="center">
-
-> ❝ You didn’t leak your infrastructure to ChatGPT… right? ❞  
-> <sup>— Internal Memo, 2025</sub>
-
-</div>
-
++ <div align="center">
++   <span style="font-size:1.2em">❝ You didn’t leak your infrastructure to ChatGPT… right? ❞</span><br>
++   <sub>— Internal Memo - National Vision 2025</sub>
++ </div>
 ---
 
 ## 🧠 What is D.A.R.C.?
@@ -45,7 +41,7 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 ---
 
 ## 🧪 Live Recon Artifacts  
-<sub><sup>Last Scan: 2025-10-28</sup></sub>
+<sup>Last Scan: 2025-10-28</sub>
 
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan  
