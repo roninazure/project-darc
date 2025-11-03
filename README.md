@@ -10,10 +10,10 @@
 </div>
 
 ---
-+ <div align="center">
-+   <span style="font-size:1.2em">❝ You didn’t leak your infrastructure to ChatGPT… right? ❞</span><br>
-+   <sub>— Internal Memo - National Vision 2025</sub>
-+ </div>
+<div align="center">
+  <p><em>❝ You didn’t leak your infrastructure to ChatGPT… right? ❞</em></p>
+  <sub><sup>— Internal Memo – National Vision 2025</sup></sub>
+</div>
 ---
 
 ## 🧠 What is D.A.R.C.?
