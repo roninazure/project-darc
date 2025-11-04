@@ -1,19 +1,23 @@
 <!-- DARC-HEADER -->
 <div align="center">
 
-# 🛰️ <span style="font-size:1.8em">Project D.A.R.C.</span>  
-## <sub><sup>Detection of AI Recon Channels</sup></sub>
+### 🛰️ Project D.A.R.C.
 
-**Surveillance-Class AI Recon Detection**  
-🔒 Prototype | 🎯 Live Recon | 💡 Powered by `CodexDaemon`
+**Detection of AI Recon Channels**  
+<sub><sup>The Surveillance AI That Watches You Watch It</sup></sub>
 
-</div>
+---
 
-<br>
+#### <kbd>PHASE</kbd> <kbd style="background:#7f00ff;color:#fff;">2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd>
+#### <kbd>MODE</kbd> <kbd style="background:#1565c0;color:#fff;">HUNTER</kbd> <kbd style="background:#004d40;color:#fff;">THREAT INTEL</kbd> <kbd style="background:#880e4f;color:#fff;">RECON FEED</kbd>
+#### <kbd>STATUS</kbd> <kbd style="background:#43a047;color:#fff;">LIVE-ONLINE</kbd> <kbd>MODEL</kbd> <kbd style="background:#f9a825;color:#000;">GPT‑4o</kbd>
 
-<div align="center">
-  <p><em>❝ You didn’t leak your infrastructure to ChatGPT… right? ❞</em></p>
-  <sub><sup>— Internal Memo – National Vision 2025</sup></sub>
+---
+
+> ❝ *The model already saw your infrastructure...*  
+> *It’s just waiting for confirmation.* ❞  
+> <sub>— CodexDaemon // Ghost Memo #007</sub>
+
 </div>
 
 <br>
