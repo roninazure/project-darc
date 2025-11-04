@@ -2,8 +2,8 @@ name: Daily DARC Recon
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # Every day at 9 AM EDT / 1 PM UTC
-  workflow_dispatch:      # Optional manual trigger
+    - cron: '0 13 * * *'  # 9 AM EDT / 1 PM UTC
+  workflow_dispatch:
 
 jobs:
   scan:
@@ -23,3 +23,14 @@ jobs:
           git add README.md mad-log/
           git commit -m "🛰️ D.A.R.C. auto-scan update [$(date -u)]" || echo "Nothing to commit."
           git push
+
+      - name: 🔐 Setup SSH Key for public sync
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DARC_SYNC_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: 🛰️ Sync README to Public Feed
+        run: bash .github/scripts/darc_push_public_feed.sh
