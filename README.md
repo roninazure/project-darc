@@ -62,30 +62,18 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
-## 🧪 Live Recon Artifacts
-<sub><sup>Last Scan: 2025-10-28</sup></sub>
-
+## 🧪 Live Recon Artifacts (2025-11-04):
 ```txt
-🕵️  D.A.R.C. Daily Recon Scan
-Scan Time: 2025-10-28 22:03 UTC
-
+🕵️ D.A.R.C. Daily Recon Scan
+Scan Time: 2025-11-04 04:05 UTC
 These are the **most severe leak indicators** detected from today's scan.
-Risk scores estimate likelihood of LLM propagation + exploitability.
-
-🔍 OPENAI_API_KEY         — risk score 10/10 🌍🔴 [KEY]
-🔍 BEGIN PRIVATE KEY      — risk score 10/10 🌍🔴 [SECRET]
-🔍 sandbox-api-key        — risk score  9/10 🌍🔴 [KEY]
-🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]
-🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
+Risk scores are based on likelihood of LLM propagation + exploitability.
+- 🔍 OPENAI_API_KEY         — risk score 10/10 🌍🔴 [KEY]
+- 🔍 BEGIN PRIVATE KEY      — risk score 10/10 🌍🔴 [SECRET]
+- 🔍 sandbox-api-key        — risk score  9/10 🌍🔴 [KEY]
+- 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]
+- 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
 
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 ```
-
-<div align="center">
-  <sub>© 2025 RoninAzure • Powered by CodexDaemon</sub>  
-  <br><br>
-  <sup>⚠️ No real secrets are used. Public output is safe.⚠️ </sup>
-</div>
-
-
