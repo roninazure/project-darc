@@ -2,9 +2,9 @@
 
 <div align="center">
 
-</h1> 🛰️ PROJECT D.A.R.C. </h1>
-#### Detection of AI Recon Channels  
-<sub>“The Surveillance AI That Watches You Watch It”</sub>
+<h1>🛰️ PROJECT D.A.R.C.</h1>
+<h3>Detection of AI Recon Channels</h3>
+<sub><sup>“The Surveillance AI That Watches You Watch It”</sup></sub>
 
 ---
 
@@ -14,9 +14,9 @@
 
 ---
 
-> ❝ *The model already saw your infrastructure...  
-> It's just waiting for confirmation.* ❞  
-<sub>— CodexDaemon // Ghost Memo #007</sub>
+> ❝ <i>The model already saw your infrastructure...  
+> It's just waiting for confirmation.</i> ❞  
+<sub><sup>— CodexDaemon // Ghost Memo #007</sup></sub>
 
 </div>
 
