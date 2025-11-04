@@ -1,22 +1,22 @@
-<!-- DARC-HEADER -->
+<!-- PROJECT D.A.R.C. README FUSION HEADER -->
+
 <div align="center">
 
-### 🛰️ Project D.A.R.C.
-
-**Detection of AI Recon Channels**  
-<sub><sup>The Surveillance AI That Watches You Watch It</sup></sub>
-
----
-
-#### <kbd>PHASE</kbd> <kbd style="background:#7f00ff;color:#fff;">2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd>
-#### <kbd>MODE</kbd> <kbd style="background:#1565c0;color:#fff;">HUNTER</kbd> <kbd style="background:#004d40;color:#fff;">THREAT INTEL</kbd> <kbd style="background:#880e4f;color:#fff;">RECON FEED</kbd>
-#### <kbd>STATUS</kbd> <kbd style="background:#43a047;color:#fff;">LIVE-ONLINE</kbd> <kbd>MODEL</kbd> <kbd style="background:#f9a825;color:#000;">GPT‑4o</kbd>
+### 🛰️ PROJECT D.A.R.C.
+#### Detection of AI Recon Channels  
+<sub><sup>“The Surveillance AI That Watches You Watch It”</sup></sub>
 
 ---
 
-> ❝ *The model already saw your infrastructure...*  
-> *It’s just waiting for confirmation.* ❞  
-> <sub>— CodexDaemon // Ghost Memo #007</sub>
+<kbd>🧠 PHASE</kbd> <kbd style="background:#7b1fa2;color:#fff;">2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd>  
+<kbd>🎯 MODE</kbd> <kbd style="background:#0d47a1;color:#fff;">HUNTER</kbd> <kbd style="background:#1b5e20;color:#fff;">THREAT INTEL</kbd> <kbd style="background:#880e4f;color:#fff;">RECON FEED</kbd>  
+<kbd>📡 STATUS</kbd> <kbd style="background:#00c853;color:#000;">LIVE‑ONLINE</kbd> <kbd>🧬 MODEL</kbd> <kbd style="background:#ffd600;color:#000;">GPT‑4o</kbd>
+
+---
+
+> ❝ *The model already saw your infrastructure...  
+> It's just waiting for confirmation.* ❞  
+<sub>— CodexDaemon // Ghost Memo #007</sub>
 
 </div>
 
