@@ -2,9 +2,9 @@
 
 <div align="center">
 
-### 🛰️ PROJECT D.A.R.C.
+</h1> 🛰️ PROJECT D.A.R.C. </h1>
 #### Detection of AI Recon Channels  
-<sub><sup>“The Surveillance AI That Watches You Watch It”</sup></sub>
+<sub>“The Surveillance AI That Watches You Watch It”</sub>
 
 ---
 
