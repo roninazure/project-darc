@@ -20,6 +20,10 @@ rm -rf "$REPO_DIR"
 GIT_SSH_COMMAND="ssh -i $KEY_PATH -o StrictHostKeyChecking=no" \
   git clone git@github.com:roninazure/project-darc-feed.git "$REPO_DIR"
 
+# Append UTC timestamp footer to README before pushing
+TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+echo -e "\n_Last mirrored: \`$TIMESTAMP\` by D.A.R.C._" >> "$PRIVATE_REPO_DIR/README.md"
+
 # Copy README
 cp "$PRIVATE_REPO_DIR/README.md" "$REPO_DIR/README.md"
 
