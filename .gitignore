@@ -8,3 +8,9 @@ testkey
 # Any stray base64 tests or outputs
 *.txt
 .github/scripts/testkey
+
+# Ignore junk
+README.md.bak
+mirror-out/
+project-darc-feed/
+~
