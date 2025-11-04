@@ -34,8 +34,6 @@ It's just waiting for confirmation.”</i>
 
 </div>
 
----
-
 <br>
 
 ---
