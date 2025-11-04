@@ -2,11 +2,16 @@ name: Push Public Feed
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # Every day at 9 AM EDT / 1 PM UTC
-  workflow_dispatch:      # Optional manual trigger
+    - cron: '0 13 * * *'  # ✅ Daily at 1 PM UTC / 9 AM EDT
+  workflow_dispatch:       # ✅ Allow manual trigger
+  workflow_run:            # ✅ Auto-run after daily scan
+    workflows: ["Daily DARC Scan"]
+    types:
+      - completed
 
 jobs:
   sync:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
     runs-on: ubuntu-latest
 
     steps:
