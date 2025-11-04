@@ -1,25 +1,40 @@
-<!-- PROJECT D.A.R.C. README FUSION HEADER -->
-
 <div align="center">
 
 <h1>🛰️ PROJECT D.A.R.C.</h1>
 
-### Detection of AI Recon Channels  
-<sub><i>"The Surveillance AI That Watches You Watch It"</i></sub>
+**Detection of AI Recon Channels**  
+*“The Surveillance AI That Watches You Watch It”*
 
-<br>
+&nbsp;
 
-<kbd>🧠 PHASE</kbd> <kbd>2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd>  
-<kbd>🎯 MODE</kbd> <kbd>HUNTER</kbd> <kbd>THREAT INTEL</kbd> <kbd>RECON FEED</kbd>  
-<kbd>📡 STATUS</kbd> <kbd>LIVE‑ONLINE</kbd> <kbd>🧬 MODEL</kbd> <kbd>GPT‑4o</kbd>
+<table>
+  <tr>
+    <td><kbd>🧠 PHASE</kbd></td>
+    <td><kbd>2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd></td>
+  </tr>
+  <tr>
+    <td><kbd>🎯 MODE</kbd></td>
+    <td><kbd>HUNTER</kbd> <kbd>THREAT INTEL</kbd> <kbd>RECON FEED</kbd></td>
+  </tr>
+  <tr>
+    <td><kbd>📡 STATUS</kbd></td>
+    <td><kbd>LIVE‑ONLINE</kbd></td>
+  </tr>
+  <tr>
+    <td><kbd>🧬 MODEL</kbd></td>
+    <td><kbd>GPT‑4o</kbd></td>
+  </tr>
+</table>
 
-<br><br>
+&nbsp;
 
-<i><b>❝ The model already saw your infrastructure...<br>
-It's just waiting for confirmation. ❞</b></i>  
-<sub>— CodexDaemon // Ghost Memo #007</sub>
+<i>“The model already saw your infrastructure...<br>
+It's just waiting for confirmation.”</i>  
+— <sub>CodexDaemon // Ghost Memo #007</sub>
 
 </div>
+
+---
 
 <br>
 
