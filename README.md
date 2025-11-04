@@ -62,11 +62,12 @@ Risk scores estimate likelihood of LLM propagation + exploitability.
 
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
+```
 
 <div align="center">
   <sub>© 2025 RoninAzure • Powered by CodexDaemon</sub>  
   <br><br>
   <sup>⚠️ No real secrets are used. Public output is safe.⚠️ </sup>
 </div>
-```
+
 
