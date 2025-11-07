@@ -2,6 +2,12 @@
 
 <h1>🛰️ PROJECT D.A.R.C.</h1>
 
+<style>
+  table kbd {
+    font-size: 1.15em;
+  }
+</style>
+
 **Detection of AI Recon Channels**  
 *“The Surveillance AI That Watches You Watch It”*
 
@@ -77,3 +83,5 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 ```
+
+_Last mirrored: `2025-11-06 03:30 UTC` by D.A.R.C._
