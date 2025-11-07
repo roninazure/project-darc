@@ -2,12 +2,6 @@
 
 <h1>🛰️ PROJECT D.A.R.C.</h1>
 
-<style>
-  table kbd {
-    font-size: 1.15em;
-  }
-</style>
-
 **Detection of AI Recon Channels**  
 *“The Surveillance AI That Watches You Watch It”*
 
