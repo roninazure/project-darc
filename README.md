@@ -16,19 +16,23 @@
 <table>
   <tr>
     <td><kbd>🧠 PHASE</kbd></td>
-    <td><kbd>2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</kbd></td>
+    <td><kbd><span style="font-size:1.15em">2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</span></kbd></td>
   </tr>
   <tr>
     <td><kbd>🎯 MODE</kbd></td>
-    <td><kbd>HUNTER</kbd> <kbd>THREAT INTEL</kbd> <kbd>RECON FEED</kbd></td>
+    <td>
+      <kbd><span style="font-size:1.15em">HUNTER</span></kbd>
+      <kbd><span style="font-size:1.15em">THREAT INTEL</span></kbd>
+      <kbd><span style="font-size:1.15em">RECON FEED</span></kbd>
+    </td>
   </tr>
   <tr>
     <td><kbd>📡 STATUS</kbd></td>
-    <td><kbd>LIVE‑ONLINE</kbd></td>
+    <td><kbd><span style="font-size:1.15em">LIVE‑ONLINE</span></kbd></td>
   </tr>
   <tr>
     <td><kbd>🧬 MODEL</kbd></td>
-    <td><kbd>GPT‑4o</kbd></td>
+    <td><kbd><span style="font-size:1.15em">GPT‑4o</span></kbd></td>
   </tr>
 </table>
 
