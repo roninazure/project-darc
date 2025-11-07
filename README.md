@@ -10,26 +10,25 @@
 <table>
   <tr>
     <td><kbd>🧠 PHASE</kbd></td>
-    <td><kbd><span style="font-size:1.15em">2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</span></kbd></td>
+    <td><kbd><big>2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</big></kbd></td>
   </tr>
   <tr>
     <td><kbd>🎯 MODE</kbd></td>
     <td>
-      <kbd><span style="font-size:1.15em">HUNTER</span></kbd>
-      <kbd><span style="font-size:1.15em">THREAT INTEL</span></kbd>
-      <kbd><span style="font-size:1.15em">RECON FEED</span></kbd>
+      <kbd><big>HUNTER</big></kbd>
+      <kbd><big>THREAT INTEL</big></kbd>
+      <kbd><big>RECON FEED</big></kbd>
     </td>
   </tr>
   <tr>
     <td><kbd>📡 STATUS</kbd></td>
-    <td><kbd><span style="font-size:1.15em">LIVE‑ONLINE</span></kbd></td>
+    <td><kbd><big>LIVE‑ONLINE</big></kbd></td>
   </tr>
   <tr>
     <td><kbd>🧬 MODEL</kbd></td>
-    <td><kbd><span style="font-size:1.15em">GPT‑4o</span></kbd></td>
+    <td><kbd><big>GPT‑4o</big></kbd></td>
   </tr>
 </table>
-
 &nbsp;
 
 <i>“The model already saw your infrastructure...<br>
