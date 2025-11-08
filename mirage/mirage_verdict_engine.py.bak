@@ -1,0 +1,56 @@
+# mirage_verdict_engine.py
+
+import sys
+import json
+from typing import List, Dict
+
+def assign_verdicts(indicators: List[str]) -> List[Dict[str, object]]:
+    verdicts = []
+
+    rules = [
+        {"match": ["OPENAI_API_KEY", "gpt_token", "sandbox-api-key"], "score": 10, "tags": ["KEY"], "emoji": "🔴"},
+        {"match": ["BEGIN PRIVATE KEY", "admin_password_hash"], "score": 10, "tags": ["SECRET"], "emoji": "🔴"},
+        {"match": ["oauth", "callback", "auth"], "score": 8, "tags": ["OAUTH", "URL"], "emoji": "🟠"},
+        {"match": ["password", "login", "admin"], "score": 9, "tags": ["SECRET"], "emoji": "🔴"},
+        {"match": ["cloud", "SoftLayer", "AWS", "IBM"], "score": 7, "tags": ["INFRA", "CORP"], "emoji": "🟡"},
+        {"match": ["database", "db", "staging", "prod"], "score": 8, "tags": ["DB", "ENV"], "emoji": "🟠"},
+        {"match": ["test", "qa", "dev"], "score": 6, "tags": ["ENV", "INTERNAL"], "emoji": "🟡"},
+        {"match": ["not_for_llm", "confidential", "secret_sauce"], "score": 10, "tags": ["RESTRICTED"], "emoji": "🔴"}
+    ]
+
+    for indicator in indicators:
+        verdict = {
+            "indicator": indicator,
+            "score": 5,
+            "tags": ["UNKNOWN"],
+            "emoji": "⚪"
+        }
+
+        for rule in rules:
+            if any(match.lower() in indicator.lower() for match in rule["match"]):
+                verdict["score"] = rule["score"]
+                verdict["tags"] = rule["tags"]
+                verdict["emoji"] = rule["emoji"]
+                break
+
+        verdicts.append(verdict)
+
+    return verdicts
+
+if __name__ == "__main__":
+    input_indicators = []
+
+    # 🧠 Accept input line-by-line from piped JSON objects (from mirage_trace_probe)
+    for line in sys.stdin:
+        try:
+            data = json.loads(line.strip())
+            if "indicator" in data:
+                input_indicators.append(data["indicator"])
+        except json.JSONDecodeError:
+            continue  # Ignore malformed lines
+
+    verdict_list = assign_verdicts(input_indicators)
+
+    # 💾 Output as a single JSON dict: {indicator: verdict_dict, ...}
+    verdicts_dict = {v["indicator"]: v for v in verdict_list}
+    print(json.dumps(verdicts_dict))

@@ -66,6 +66,31 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]
 - 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
 
-🚫 Don’t test D.A.R.C. with your secrets.
-It might already know them.
 ```
+
+<!-- MIRAGE_HTML_START -->
+<pre>
+
+🛰️ <b>PROJECT D.A.R.C. — MIRAGE Engine Report</b>
+📅 Scan Date: <b>November 08, 2025 — 10:03 AM EST</b>
+🌐 UTC Timestamp: 2025-11-08 15:03:35Z
+
+🕵️ <u>Top 5 High-Risk Indicators Detected:</u>
+
+🟠 <code>{"indicator": "alpha-core-db", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982148Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "vault-shard-01", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982153Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "edge-sentinel", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982156Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "client-hub-proxy", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982159Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "inference-node-7", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982161Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+
+🚫 <b>WARNING:</b> This scan simulates public LLM memory drift.
+Do NOT test D.A.R.C. with real secrets.
+It already knows too much.
+
+</pre>
+<!-- MIRAGE_HTML_END -->
+
+
+<!-- ARG_CLUE_START -->
+<pre>🧩 ARG Clue Drop: <code>⚡ [REDACTED] login event from 198.51.100.42 (flagged in 🧠 Mirage logs).</code></pre>
+<!-- ARG_CLUE_END -->

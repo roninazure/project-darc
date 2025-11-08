@@ -1,0 +1,38 @@
+# mirage_injector.py
+
+import sys
+import json
+from datetime import datetime
+
+def inject_into_readme(verdicts: dict):
+    top_5 = sorted(verdicts.values(), key=lambda x: x["score"], reverse=True)[:5]
+
+    output_lines = [
+        f"## 🛰️ Live Recon Artifacts ({datetime.utcnow().strftime('%Y-%m-%d %H:%M:%SZ')})\n"
+    ]
+    for v in top_5:
+        indicator = v["indicator"]
+        score = v["score"]
+        tags = ", ".join(v["tags"])
+        emoji = v["emoji"]
+        output_lines.append(f"{emoji} `{indicator}` — score **{score}/10** — tags: _{tags}_")
+
+    # Inject into README
+    with open("README.md", "r") as f:
+        content = f.read()
+
+    start_tag = "## 🛰️ Live Recon Artifacts"
+    if start_tag in content:
+        content = content.split(start_tag)[0].strip()
+
+    with open("README.md", "w") as f:
+        f.write(content + "\n\n" + "\n".join(output_lines) + "\n")
+
+if __name__ == "__main__":
+    try:
+        verdicts = json.load(sys.stdin)  # This is a dict now!
+        inject_into_readme(verdicts)
+        print("✅ Injected top 5 indicators into README.")
+    except Exception as e:
+        print(f"💥 ERROR: {e}")
+        sys.exit(1)
