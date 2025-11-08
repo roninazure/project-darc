@@ -1,36 +1,22 @@
+<!-- DARC_HTML_HEADER_START -->
 <div align="center">
 
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%9A%A1%20Project%20D.A.R.C.-AI%20Surveillance%20Recon%20Engine-6a0dad?style=for-the-badge&labelColor=1a1a1a" alt="Project D.A.R.C. Badge"/>
+  <img src="https://img.shields.io/badge/OpenAI-•-black?logo=openai&logoColor=white&style=for-the-badge&labelColor=1a1a1a" alt="OpenAI Badge"/>
+</p>
+
 <h1>🛰️ PROJECT D.A.R.C.</h1>
+<p><i>The Surveillance AI That Watches You Watch It</i></p>
 
-**Detection of AI Recon Channels**  
-*“The Surveillance AI That Watches You Watch It”*
+<p align="center">
+  <img src="https://img.shields.io/badge/Mode-Hunter%20%7C%20Threat%20Intel%20%7C%20Recon%20Feed-0ea5e9?style=for-the-badge&labelColor=1a1a1a" alt="Modes"/>
+  <img src="https://img.shields.io/badge/Model-GPT--4o-10b981?style=for-the-badge&labelColor=1a1a1a" alt="Model"/>
+  <img src="https://img.shields.io/badge/Status-Live--Online-brightgreen?style=for-the-badge&labelColor=1a1a1a" alt="Status"/>
+</p>
 
-&nbsp;
-
-<h3><code>⚙️  SYSTEM STATUS SNAPSHOT</code></h3>
-
-<table>
-  <tr>
-    <td><big><b>🧠 PHASE</b></big></td>
-    <td><big><b>2.3 ➝ INFRA MEMORY SCAN + RECON TAGGING</b></big></td>
-  </tr>
-  <tr>
-    <td><big><b>🎯 MODE</b></big></td>
-    <td>
-      <big><b>HUNTER</b></big> &nbsp;
-      <big><b>THREAT INTEL</b></big> &nbsp;
-      <big><b>RECON FEED</b></big>
-    </td>
-  </tr>
-  <tr>
-    <td><big><b>📡 STATUS</b></big></td>
-    <td><center><big><b>LIVE‑ONLINE</b></big></center></td>
-  </tr>
-  <tr>
-    <td><big><b>🧬 MODEL</b></big></td>
-    <td><big><b>GPT‑4o</b></big></td>
-  </tr>
-</table>
+</div>
+<!-- DARC_HTML_HEADER_END -->
 
 &nbsp;
 
