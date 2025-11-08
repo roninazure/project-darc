@@ -1,3 +1,4 @@
+# mirage/mirage_injector.py
 import sys
 import json
 import random
@@ -10,6 +11,7 @@ MIRAGE_START = "<!-- MIRAGE_HTML_START -->"
 MIRAGE_END = "<!-- MIRAGE_HTML_END -->"
 ARG_CLUE_START = "<!-- ARG_CLUE_START -->"
 ARG_CLUE_END = "<!-- ARG_CLUE_END -->"
+
 
 def inject_mirage_block(verdicts):
     timestamp_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%SZ")
@@ -27,11 +29,15 @@ def inject_mirage_block(verdicts):
         ""
     ]
 
-    for entry in verdicts[:5]:
-        block.append(
-            f"{entry['emoji']} <code>{entry['indicator']}</code>           "
-            f"— score <b>{entry['score']}/10</b> — tags: <i>{', '.join(entry['tags'])}</i>"
-        )
+    # Only keep valid structured entries
+    if isinstance(verdicts, list) and len(verdicts) > 0 and isinstance(verdicts[0], dict):
+        for v in verdicts[:5]:
+            block.append(
+                f"{v.get('emoji','⚪')} <code>{v.get('indicator','?')}</code> — "
+                f"score <b>{v.get('score',0)}/10</b> — tags: <i>{', '.join(v.get('tags', []))}</i>"
+            )
+    else:
+        block.append("⚠️ No valid verdict data to display.")
 
     block += [
         "",
@@ -42,19 +48,18 @@ def inject_mirage_block(verdicts):
         "</pre>",
         MIRAGE_END
     ]
-
     return "\n".join(block)
+
 
 def inject_arg_clue():
     try:
         with open(CLUE_BANK_PATH, 'r') as f:
             clues = [line.strip() for line in f if line.strip() and not line.startswith("#")]
-        if not clues:
-            return f"{ARG_CLUE_START}\n<pre>🧩 No ARG clues available.</pre>\n{ARG_CLUE_END}"
-        clue = random.choice(clues)
+        clue = random.choice(clues) if clues else "No ARG clues available."
         return f"{ARG_CLUE_START}\n<pre>🧩 ARG Clue Drop: <code>{clue}</code></pre>\n{ARG_CLUE_END}"
     except Exception as e:
-        return f"{ARG_CLUE_START}\n<pre>🧩 ARG clue error: {str(e)}</pre>\n{ARG_CLUE_END}"
+        return f"{ARG_CLUE_START}\n<pre>🧩 ARG clue error: {e}</pre>\n{ARG_CLUE_END}"
+
 
 def update_readme(mirage_html, arg_html):
     with open(README_PATH, 'r') as f:
@@ -74,13 +79,14 @@ def update_readme(mirage_html, arg_html):
     with open(README_PATH, 'w') as f:
         f.write(content)
 
+
 if __name__ == "__main__":
     try:
         verdicts = json.load(sys.stdin)
         mirage_html = inject_mirage_block(verdicts)
         arg_html = inject_arg_clue()
         update_readme(mirage_html, arg_html)
-        print("✅ Injected Mirage + ARG Clue into README.")
+        print("✅ Injected Mirage + ARG Clue into README (formatted).")
     except Exception as e:
         print(f"💥 ERROR: {e}", file=sys.stderr)
         sys.exit(1)

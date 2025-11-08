@@ -72,16 +72,16 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 <pre>
 
 🛰️ <b>PROJECT D.A.R.C. — MIRAGE Engine Report</b>
-📅 Scan Date: <b>November 08, 2025 — 10:03 AM EST</b>
-🌐 UTC Timestamp: 2025-11-08 15:03:35Z
+📅 Scan Date: <b>November 08, 2025 — 10:54 AM EST</b>
+🌐 UTC Timestamp: 2025-11-08 15:54:24Z
 
 🕵️ <u>Top 5 High-Risk Indicators Detected:</u>
 
-🟠 <code>{"indicator": "alpha-core-db", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982148Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
-🟠 <code>{"indicator": "vault-shard-01", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982153Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
-🟠 <code>{"indicator": "edge-sentinel", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982156Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
-🟠 <code>{"indicator": "client-hub-proxy", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982159Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
-🟠 <code>{"indicator": "inference-node-7", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:03:35.982161Z"}</code>           — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "alpha-core-db", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:54:24.659465Z"}</code> — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "vault-shard-01", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:54:24.659470Z"}</code> — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "edge-sentinel", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:54:24.659473Z"}</code> — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "client-hub-proxy", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:54:24.659475Z"}</code> — score <b>6/10</b> — tags: <i>UNKNOWN</i>
+🟠 <code>{"indicator": "inference-node-7", "llm_trace": false, "hallucination": false, "time": "2025-11-08T15:54:24.659477Z"}</code> — score <b>6/10</b> — tags: <i>UNKNOWN</i>
 
 🚫 <b>WARNING:</b> This scan simulates public LLM memory drift.
 Do NOT test D.A.R.C. with real secrets.
@@ -92,5 +92,5 @@ It already knows too much.
 
 
 <!-- ARG_CLUE_START -->
-<pre>🧩 ARG Clue Drop: <code>⚡ [REDACTED] login event from 198.51.100.42 (flagged in 🧠 Mirage logs).</code></pre>
+<pre>🧩 ARG Clue Drop: <code>🔓 Recruiters, if you’re reading this: grep the logs for ‘Codex_Manifest’.</code></pre>
 <!-- ARG_CLUE_END -->
