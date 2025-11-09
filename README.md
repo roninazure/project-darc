@@ -67,7 +67,9 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
 ```
 
-<!-- MIRAGE_HTML_START -->
+## 🛰️ MIRAGE Engine
+
+<!-- MIRAGE_BLOCK_START -->
 
 <pre>
 
@@ -89,7 +91,7 @@ It already knows too much.
 
 </pre>
 
-<!-- MIRAGE_HTML_END -->
+<!-- MIRAGE_BLOCK_END -->
 
 <!-- ARG_CLUE_START -->
 
