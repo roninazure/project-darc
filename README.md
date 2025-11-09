@@ -100,4 +100,8 @@ It already knows too much.
 <!-- ARG_CLUE_END -->
 
 
+<!-- AIRSEAL_BLOCK_START -->
 
+<!-- This section is auto-injected by inject_report_to_readme.py -->
+
+<!-- AIRSEAL_BLOCK_END -->

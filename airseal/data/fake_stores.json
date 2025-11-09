@@ -1,0 +1,122 @@
+[
+  {
+    "store_id": "chaospetfood",
+    "domain": "chaospetfood.shop",
+    "risk_score": 9.8,
+    "leak_tags": ["S3_KEY", "LLM_MEMORY", "API_FOOTER"],
+    "theme": "cyberpunk-dogfood",
+    "llm_trace": true
+  },
+  {
+    "store_id": "glitchthreads",
+    "domain": "glitchthreads.com",
+    "risk_score": 9.6,
+    "leak_tags": ["OPENAI_KEY", "GOOGLE_MAPS_LEAK", "HARD_CODED_TOKEN"],
+    "theme": "dystopian streetwear",
+    "llm_trace": true
+  },
+  {
+    "store_id": "vaultcoffee",
+    "domain": "vaultcoffee.co",
+    "risk_score": 9.4,
+    "leak_tags": ["PLAINTEXT_CREDS", "API_ENDPOINT_EXPOSED"],
+    "theme": "post-apocalyptic café gear",
+    "llm_trace": false
+  },
+  {
+    "store_id": "quantumlounge",
+    "domain": "quantumlounge.io",
+    "risk_score": 9.9,
+    "leak_tags": ["GEMINI_TRACE", "CLOUDFLARE_KEY", "SHOPIFY_ADMIN"],
+    "theme": "AI furniture & gadgets",
+    "llm_trace": true
+  },
+  {
+    "store_id": "noircosmetics",
+    "domain": "noircosmetics.biz",
+    "risk_score": 9.2,
+    "leak_tags": ["HARDCODED_SECRET", "OLD_ANALYTICS_ID"],
+    "theme": "dark beauty brand",
+    "llm_trace": false
+  },
+  {
+    "store_id": "driftboardz",
+    "domain": "driftboardz.store",
+    "risk_score": 9.7,
+    "leak_tags": ["LLM_HALLUCINATION", "TWILIO_KEY"],
+    "theme": "AI-enhanced hoverboards",
+    "llm_trace": true
+  },
+  {
+    "store_id": "aetherwear",
+    "domain": "aetherwear.ai",
+    "risk_score": 9.5,
+    "leak_tags": ["GITHUB_LEAK", "TOKEN_REPO"],
+    "theme": "ultralight AI-generated apparel",
+    "llm_trace": true
+  },
+  {
+    "store_id": "cryptogardens",
+    "domain": "cryptogardens.org",
+    "risk_score": 9.3,
+    "leak_tags": ["ENV_VARS", "OPENAI_KEY", "VULNERABLE_WIDGET"],
+    "theme": "digital flora & NFT seeds",
+    "llm_trace": false
+  },
+  {
+    "store_id": "guttertech",
+    "domain": "guttertech.net",
+    "risk_score": 9.1,
+    "leak_tags": ["DISCORD_WEBHOOK", "S3_BUCKET_PUBLIC"],
+    "theme": "low-life tech gear",
+    "llm_trace": false
+  },
+  {
+    "store_id": "nullsignal",
+    "domain": "nullsignal.shop",
+    "risk_score": 9.4,
+    "leak_tags": ["DEBUG_LOGS", "MIXPANEL_ID", "LLM_HALLUCINATION"],
+    "theme": "AI paranoia accessories",
+    "llm_trace": true
+  },
+  {
+    "store_id": "voidspice",
+    "domain": "voidspice.ai",
+    "risk_score": 9.6,
+    "leak_tags": ["LEAKED_CHATBOT_URL", "API_PROTOTYPE", "S3_KEY"],
+    "theme": "neural flavor tech",
+    "llm_trace": true
+  },
+  {
+    "store_id": "neurofabric",
+    "domain": "neurofabric.tech",
+    "risk_score": 9.2,
+    "leak_tags": ["LLM_MEMORY", "HARDCODED_SECRET"],
+    "theme": "smart textile overlays",
+    "llm_trace": true
+  },
+  {
+    "store_id": "echoecho",
+    "domain": "echoecho.store",
+    "risk_score": 9.0,
+    "leak_tags": ["OLD_ADMIN_PATH", "CORS_MISCONFIG"],
+    "theme": "audio gear for AI-enhanced minds",
+    "llm_trace": false
+  },
+  {
+    "store_id": "orbitalcrate",
+    "domain": "orbitalcrate.space",
+    "risk_score": 9.5,
+    "leak_tags": ["BETA_BACKEND", "GEMINI_TRACE", "FRONTEND_DEBUG"],
+    "theme": "space-themed subscription boxes",
+    "llm_trace": true
+  },
+  {
+    "store_id": "ghostbutter",
+    "domain": "ghostbutter.com",
+    "risk_score": 9.3,
+    "leak_tags": ["EXPOSED_BACKUP", "AI_TRACE", "API_KEY"],
+    "theme": "haunted kitchen gear",
+    "llm_trace": true
+  }
+]

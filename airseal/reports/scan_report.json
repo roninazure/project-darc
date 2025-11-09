@@ -1,0 +1,175 @@
+[
+  {
+    "store": "Unknown",
+    "score": 22,
+    "tags": [
+      "key",
+      "leak",
+      "llm",
+      "openai",
+      "token"
+    ],
+    "domain": "glitchthreads.com",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 21,
+    "tags": [
+      "env",
+      "key",
+      "leak",
+      "llm",
+      "openai"
+    ],
+    "domain": "cryptogardens.org",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 20,
+    "tags": [
+      "api",
+      "exposed",
+      "key",
+      "leak",
+      "llm"
+    ],
+    "domain": "ghostbutter.com",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 16,
+    "tags": [
+      "api",
+      "key",
+      "leak",
+      "llm"
+    ],
+    "domain": "chaospetfood.shop",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 16,
+    "tags": [
+      "api",
+      "exposed",
+      "leak",
+      "llm"
+    ],
+    "domain": "vaultcoffee.co",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 16,
+    "tags": [
+      "api",
+      "key",
+      "leak",
+      "llm"
+    ],
+    "domain": "voidspice.ai",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 14,
+    "tags": [
+      "leak",
+      "llm",
+      "secret"
+    ],
+    "domain": "noircosmetics.biz",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 14,
+    "tags": [
+      "leak",
+      "llm",
+      "secret"
+    ],
+    "domain": "neurofabric.tech",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 13,
+    "tags": [
+      "key",
+      "leak",
+      "llm"
+    ],
+    "domain": "quantumlounge.io",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 13,
+    "tags": [
+      "key",
+      "leak",
+      "llm"
+    ],
+    "domain": "driftboardz.store",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 13,
+    "tags": [
+      "leak",
+      "llm",
+      "token"
+    ],
+    "domain": "aetherwear.ai",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 11,
+    "tags": [
+      "leak",
+      "llm",
+      "public"
+    ],
+    "domain": "guttertech.net",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 11,
+    "tags": [
+      "debug",
+      "leak",
+      "llm"
+    ],
+    "domain": "nullsignal.shop",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 11,
+    "tags": [
+      "debug",
+      "leak",
+      "llm"
+    ],
+    "domain": "orbitalcrate.space",
+    "platform": "Shopify"
+  },
+  {
+    "store": "Unknown",
+    "score": 9,
+    "tags": [
+      "leak",
+      "llm"
+    ],
+    "domain": "echoecho.store",
+    "platform": "Shopify"
+  }
+]
