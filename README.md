@@ -65,6 +65,7 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 sandbox-api-key        — risk score  9/10 🌍🔴 [KEY]
 - 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]
 - 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
+```
 
 <!-- MIRAGE_HTML_START -->
 
