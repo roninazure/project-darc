@@ -52,7 +52,7 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
-## 🧪 Live Recon Artifacts (2025-11-13):
+## 🧪 Live Recon Artifacts:
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan
 Scan Time: 2025-11-13 23:45 UTC
@@ -67,15 +67,13 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 ```
-## 🛰️ MIRAGE Engine
-
 <!-- MIRAGE_BLOCK_START -->
 <h2>🛰️ MIRAGE Engine</h2>
 
 <pre>
 PROJECT D.A.R.C. – MIRAGE Engine Report
-Scan Date: November 14, 2025 — 08:56 PM EST
-UTC Timestamp: 2025-11-15 01:56:59Z
+Scan Date: November 14, 2025 — 09:00 PM EST
+UTC Timestamp: 2025-11-15 02:00:15Z
 
 🕵️ Top 5 High-Risk Indicators Detected:
 

@@ -1,9 +1,14 @@
 import json
-import sys
 import datetime
+from pathlib import Path
 
-INPUT_FILE = "mirage/infra_indicators.txt"
-LOG_FILE = "mad-log/mirage_scan_" + datetime.datetime.utcnow().strftime("%Y-%m-%d") + ".json"
+# Dynamically resolve base path of the script
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_FILE = BASE_DIR / "infra_indicators.txt"
+LOG_DIR = BASE_DIR.parent / "mad-log"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+LOG_FILE = LOG_DIR / f"mirage_scan_{datetime.datetime.utcnow().strftime('%Y-%m-%d')}.json"
 
 def load_indicators():
     with open(INPUT_FILE, "r") as f:

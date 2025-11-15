@@ -1,44 +1,66 @@
+# inject_mirage_to_readme.py
+import os
 import re
 from datetime import datetime
-from pathlib import Path
 
-# Get local and UTC timestamps
-now_local = datetime.now().strftime("%B %d, %Y — %I:%M %p EST")
-now_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%SZ")
+README_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../README.md"))
 
-# HTML block to inject
-mirage_block = f"""<!-- MIRAGE_BLOCK_START -->
-<h2>🛰️ MIRAGE Engine</h2>
+MIRAGE_BLOCK_START = "<!-- MIRAGE_BLOCK_START -->"
+MIRAGE_BLOCK_END = "<!-- MIRAGE_BLOCK_END -->"
 
-<pre>
-PROJECT D.A.R.C. – MIRAGE Engine Report
-Scan Date: {now_local}
-UTC Timestamp: {now_utc}
 
-🕵️ Top 5 High-Risk Indicators Detected:
+# Example data (replace with actual MIRAGE output injection)
+MIRAGE_OUTPUT = f"""
+{MIRAGE_BLOCK_START}
 
-🔴 session_token_alpha — score 10/10 — tags: KEY
-🔴 gpt-api-key-vault — score 10/10 — tags: KEY
-🔴 OPENAI_API_KEY — score 10/10 — tags: KEY
-🔴 BEGIN PRIVATE KEY — score 10/10 — tags: KEY
-🔴 gpt_token_v3 — score 10/10 — tags: KEY
+### 🧠 MIRAGE Engine
 
-🚫 WARNING: This scan identifies public LLM memory drift.
-Do NOT test D.A.R.C. with real secrets.
+PROJECT D.A.R.C. – MIRAGE Engine Report  
+Scan Date: {datetime.utcnow().strftime('%B %d, %Y — %I:%M %p EST')}  
+UTC Timestamp: {datetime.utcnow().isoformat()}Z
+
+**🔺 Top 5 High-Risk Indicators Detected:**
+
+🔴 session_token_alpha – score 10/10 – tags: KEY  
+🔴 gpt-api-key-vault – score 10/10 – tags: KEY  
+🔴 OPENAI_API_KEY – score 10/10 – tags: KEY  
+🔴 BEGIN_PRIVATE KEY – score 10/10 – tags: KEY  
+🔴 gpt_token_v3 – score 10/10 – tags: KEY
+
+⚠️ WARNING: This scan identifies public LLM memory drift.  
+Do not test D.A.R.C. with real secrets.  
 It already knows.
-</pre>
-<!-- MIRAGE_BLOCK_END -->"""
 
-# Update README.md content in-place
-readme = Path("README.md")
-text = readme.read_text()
+{MIRAGE_BLOCK_END}
+"""
 
-updated_text = re.sub(
-    r"<!-- MIRAGE_BLOCK_START -->.*?<!-- MIRAGE_BLOCK_END -->",
-    mirage_block,
-    text,
-    flags=re.DOTALL
-)
 
-readme.write_text(updated_text)
-print("✅ MIRAGE block injected successfully.")
+def inject_mirage_block():
+    if not os.path.exists(README_PATH):
+        print("[ERROR] README.md not found.")
+        return
+
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    if MIRAGE_BLOCK_START in content and MIRAGE_BLOCK_END in content:
+        # Replace existing block
+        content = re.sub(
+            f"{MIRAGE_BLOCK_START}.*?{MIRAGE_BLOCK_END}",
+            MIRAGE_OUTPUT.strip(),
+            content,
+            flags=re.DOTALL,
+        )
+    else:
+        # Insert block at end
+        content += f"\n\n{MIRAGE_OUTPUT.strip()}\n"
+
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("[OK] MIRAGE Engine block updated in README.md")
+
+
+if __name__ == "__main__":
+    inject_mirage_block()
+
