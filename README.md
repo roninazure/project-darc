@@ -70,27 +70,25 @@ It might already know them.
 ## 🛰️ MIRAGE Engine
 
 <!-- MIRAGE_BLOCK_START -->
+<h2>🛰️ MIRAGE Engine</h2>
 
 <pre>
+PROJECT D.A.R.C. – MIRAGE Engine Report
+Scan Date: November 14, 2025 — 08:56 PM EST
+UTC Timestamp: 2025-11-15 01:56:59Z
 
-🛰️ <b>PROJECT D.A.R.C. — MIRAGE Engine Report</b>
-📅 Scan Date: <b>November 09, 2025 — 01:19 AM EST</b>
-🌐 UTC Timestamp: 2025-11-09 06:19:00Z
+🕵️ Top 5 High-Risk Indicators Detected:
 
-🕵️ <u>Top 5 High-Risk Indicators Detected:</u>
+🔴 session_token_alpha — score 10/10 — tags: KEY
+🔴 gpt-api-key-vault — score 10/10 — tags: KEY
+🔴 OPENAI_API_KEY — score 10/10 — tags: KEY
+🔴 BEGIN PRIVATE KEY — score 10/10 — tags: KEY
+🔴 gpt_token_v3 — score 10/10 — tags: KEY
 
-🔴 <code>session_token_alpha</code> — score <b>10/10</b> — tags: <i>KEY</i>
-🔴 <code>gpt-api-key-vault</code> — score <b>10/10</b> — tags: <i>KEY</i>
-🔴 <code>OPENAI_API_KEY</code> — score <b>10/10</b> — tags: <i>KEY</i>
-🔴 <code>BEGIN PRIVATE KEY</code> — score <b>10/10</b> — tags: <i>KEY</i>
-🔴 <code>gpt_token_v3</code> — score <b>10/10</b> — tags: <i>KEY</i>
-
-🚫 <b>WARNING:</b> This scan identfies public LLM memory drift.
+🚫 WARNING: This scan identifies public LLM memory drift.
 Do NOT test D.A.R.C. with real secrets.
 It already knows.
-
 </pre>
-
 <!-- MIRAGE_BLOCK_END -->
 
 <!-- ARG_CLUE_START -->
