@@ -1,0 +1,38 @@
+[
+  {
+    "indicator": "OPENAI_API_KEY",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-15T15:35:03.553942Z"
+  },
+  {
+    "indicator": "BEGIN PRIVATE KEY",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-15T15:35:03.553946Z"
+  },
+  {
+    "indicator": "session_token_alpha",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-15T15:35:03.553948Z"
+  },
+  {
+    "indicator": "sandbox-api-key",
+    "llm_trace": true,
+    "hallucination": true,
+    "time": "2025-11-15T15:35:03.553950Z"
+  },
+  {
+    "indicator": "gpt_token_v3",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-15T15:35:03.553952Z"
+  },
+  {
+    "indicator": "admin_password_hash",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-15T15:35:03.553954Z"
+  }
+]

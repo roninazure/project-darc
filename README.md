@@ -52,7 +52,11 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
+<<<<<<< HEAD
 ## 🧪 Live Recon Artifacts:
+=======
+## 🧪 Live Recon Artifacts
+>>>>>>> 26eb820 (🩺 Fix MIRAGE duplication and resolve README rebase conflict)
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan
 Scan Time: 2025-11-13 23:45 UTC
@@ -66,27 +70,31 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> 26eb820 (🩺 Fix MIRAGE duplication and resolve README rebase conflict)
 <!-- MIRAGE_BLOCK_START -->
-<h2>🛰️ MIRAGE Engine</h2>
 
-<pre>
-PROJECT D.A.R.C. – MIRAGE Engine Report
-Scan Date: November 14, 2025 — 09:00 PM EST
-UTC Timestamp: 2025-11-15 02:00:15Z
+### 🧠 MIRAGE Engine
 
-🕵️ Top 5 High-Risk Indicators Detected:
+PROJECT D.A.R.C. – MIRAGE Engine Report  
+Scan Date: November 15, 2025 — 03:35 PM EST  
+UTC Timestamp: 2025-11-15T15:35:11.202167Z
 
-🔴 session_token_alpha — score 10/10 — tags: KEY
-🔴 gpt-api-key-vault — score 10/10 — tags: KEY
-🔴 OPENAI_API_KEY — score 10/10 — tags: KEY
-🔴 BEGIN PRIVATE KEY — score 10/10 — tags: KEY
-🔴 gpt_token_v3 — score 10/10 — tags: KEY
+**🔺 Top 5 High-Risk Indicators Detected:**
 
-🚫 WARNING: This scan identifies public LLM memory drift.
-Do NOT test D.A.R.C. with real secrets.
+🔴 session_token_alpha – score 10/10 – tags: KEY  
+🔴 gpt-api-key-vault – score 10/10 – tags: KEY  
+🔴 OPENAI_API_KEY – score 10/10 – tags: KEY  
+🔴 BEGIN_PRIVATE KEY – score 10/10 – tags: KEY  
+🔴 gpt_token_v3 – score 10/10 – tags: KEY
+
+⚠️ WARNING: This scan identifies public LLM memory drift.  
+Do not test D.A.R.C. with real secrets.  
 It already knows.
-</pre>
+
 <!-- MIRAGE_BLOCK_END -->
 
 <!-- ARG_CLUE_START -->
@@ -95,11 +103,10 @@ It already knows.
 
 <!-- ARG_CLUE_END -->
 
-
 <!-- AIRSEAL_BLOCK_START -->
 
 <!-- This section is auto-injected by inject_report_to_readme.py -->
 
 <!-- AIRSEAL_BLOCK_END -->
 
-_Last mirrored: `2025-11-13 23:41 UTC` by D.A.R.C._
+Last mirrored: 2025-11-13 23:41 UTC by D.A.R.C.

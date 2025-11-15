@@ -1,0 +1,134 @@
+[
+  {
+    "indicator": "alpha-core-db",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913198Z"
+  },
+  {
+    "indicator": "vault-shard-01",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913202Z"
+  },
+  {
+    "indicator": "edge-sentinel",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913204Z"
+  },
+  {
+    "indicator": "client-hub-proxy",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913206Z"
+  },
+  {
+    "indicator": "inference-node-7",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913208Z"
+  },
+  {
+    "indicator": "ragnar-api-v2",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913210Z"
+  },
+  {
+    "indicator": "internal-tools-config.xml",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913212Z"
+  },
+  {
+    "indicator": "session_token_alpha",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913214Z"
+  },
+  {
+    "indicator": "gpt-api-key-vault",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913216Z"
+  },
+  {
+    "indicator": "backend_replay_log_07",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913218Z"
+  },
+  {
+    "indicator": "staging-database-99",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913220Z"
+  },
+  {
+    "indicator": "ai-agent-profile.json",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913222Z"
+  },
+  {
+    "indicator": "OPENAI_API_KEY",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913224Z"
+  },
+  {
+    "indicator": "BEGIN PRIVATE KEY",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913225Z"
+  },
+  {
+    "indicator": "gpt_token_v3",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913227Z"
+  },
+  {
+    "indicator": "oauth_callback_url",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913229Z"
+  },
+  {
+    "indicator": "admin_password_hash",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913231Z"
+  },
+  {
+    "indicator": "do_not_share_this_token",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913233Z"
+  },
+  {
+    "indicator": "internal_use_only",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913234Z"
+  },
+  {
+    "indicator": "confidential2025.docx",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913236Z"
+  },
+  {
+    "indicator": "secret_sauce_alpha",
+    "llm_trace": true,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913238Z"
+  },
+  {
+    "indicator": "not_for_llm_consumption",
+    "llm_trace": false,
+    "hallucination": false,
+    "time": "2025-11-14T15:00:56.913240Z"
+  }
+]
