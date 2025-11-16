@@ -1,3 +1,9 @@
+# Sanity check to prevent corrupt README injection due to unresolved Git conflicts
+readme_path = "README.md"
+with open(readme_path, "r") as f:
+    content = f.read()
+if "<<<<<<< HEAD" in content or ">>>>>>>" in content:
+    raise RuntimeError("🛑 README.md contains unresolved merge conflicts. Resolve them before running injection.")
 # inject_mirage_to_readme.py
 import os
 import re
