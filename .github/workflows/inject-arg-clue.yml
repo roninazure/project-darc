@@ -1,0 +1,42 @@
+name: Daily ARG Clue Injector
+
+on:
+  schedule:
+    - cron: "0 5 * * *"  # Daily at 05:00 UTC (Midnight EST)
+  workflow_dispatch:
+
+jobs:
+  inject-arg-clue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Inject ARG clue into README
+        run: |
+          source .venv/bin/activate
+          python .github/scripts/inject_clue_to_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add README.md
+          git commit -m "🧩 Injected ARG clue into README"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
