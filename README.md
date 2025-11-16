@@ -52,11 +52,8 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
-<<<<<<< HEAD
 ## 🧪 Live Recon Artifacts:
-=======
-## 🧪 Live Recon Artifacts
->>>>>>> 26eb820 (🩺 Fix MIRAGE duplication and resolve README rebase conflict)
+
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan
 Scan Time: 2025-11-13 23:45 UTC
@@ -70,11 +67,7 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
-<<<<<<< HEAD
 ```
-=======
-
->>>>>>> 26eb820 (🩺 Fix MIRAGE duplication and resolve README rebase conflict)
 <!-- MIRAGE_BLOCK_START -->
 
 ### 🧠 MIRAGE Engine
