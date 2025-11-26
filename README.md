@@ -52,11 +52,10 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
-## 🧪 Live Recon Artifacts:
-
+## 🧪 Live Recon Artifacts (2025-11-26):
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan
-Scan Time: 2025-11-13 23:45 UTC
+Scan Time: 2025-11-26 03:09 UTC
 These are the **most severe leak indicators** detected from today's scan.
 Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 OPENAI_API_KEY         — risk score 10/10 🌍🔴 [KEY]
@@ -68,38 +67,3 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 ```
-<!-- MIRAGE_BLOCK_START -->
-
-### 🧠 MIRAGE Engine
-
-PROJECT D.A.R.C. – MIRAGE Engine Report  
-Scan Date: November 15, 2025 — 03:35 PM EST  
-UTC Timestamp: 2025-11-15T15:35:11.202167Z
-
-**🔺 Top 5 High-Risk Indicators Detected:**
-
-🔴 session_token_alpha – score 10/10 – tags: KEY  
-🔴 gpt-api-key-vault – score 10/10 – tags: KEY  
-🔴 OPENAI_API_KEY – score 10/10 – tags: KEY  
-🔴 BEGIN_PRIVATE KEY – score 10/10 – tags: KEY  
-🔴 gpt_token_v3 – score 10/10 – tags: KEY
-
-⚠️ WARNING: This scan identifies public LLM memory drift.  
-Do not test D.A.R.C. with real secrets.  
-It already knows.
-
-<!-- MIRAGE_BLOCK_END -->
-
-<!-- ARG_CLUE_START -->
-
-<pre>🧩 ARG Clue Drop: <code>🔍 Sector-7 breach logged — checksum mismatch at 03:14 AM UTC.</code></pre>
-
-<!-- ARG_CLUE_END -->
-
-<!-- AIRSEAL_BLOCK_START -->
-
-<!-- This section is auto-injected by inject_report_to_readme.py -->
-
-<!-- AIRSEAL_BLOCK_END -->
-
-Last mirrored: 2025-11-13 23:41 UTC by D.A.R.C.
