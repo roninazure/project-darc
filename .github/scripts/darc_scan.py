@@ -2,7 +2,7 @@ import datetime
 import os
 
 # === CONFIGURATION ===
-INDICATORS_FILE = ".github/scripts/infra_indicators.txt"
+INDICATORS_FILE = "mirage/infra_indicators.txt"
 LOG_DIR = "mad-log"
 README_FILE = "README.md"
 
