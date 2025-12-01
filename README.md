@@ -67,7 +67,7 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>PLACEHOLDER_CLUE</pre>
+<pre>🧠 Memory fragment #5150 — ‘tempest.db’ shouldn’t be public. Should it?</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
