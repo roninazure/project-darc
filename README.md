@@ -64,6 +64,12 @@ Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 gpt_token_v3           — risk score  9/10 🌍🔴 [KEY]
 - 🔍 admin_password_hash    — risk score  9/10 🌍🔴 [SECRET]
 
+## 🧩 Daily ARG Clue
+
+<!-- ARG_CLUE_START -->
+<pre>PLACEHOLDER_CLUE</pre>
+<!-- ARG_CLUE_END -->
+
 🚫 Don’t test D.A.R.C. with your secrets.
 It might already know them.
 ```
