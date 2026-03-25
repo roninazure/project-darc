@@ -52,10 +52,10 @@ This repo serves as the **public-facing showcase**. All private scanning logic i
 
 ---
 
-## 🧪 Live Recon Artifacts (2026-03-24):
+## 🧪 Live Recon Artifacts (2026-03-25):
 ```txt
 🕵️ D.A.R.C. Daily Recon Scan
-Scan Time: 2026-03-24 14:09 UTC
+Scan Time: 2026-03-25 14:07 UTC
 These are the **most severe leak indicators** detected from today's scan.
 Risk scores are based on likelihood of LLM propagation + exploitability.
 - 🔍 OPENAI_API_KEY         — risk score 10/10 🌍🔴 [KEY]
