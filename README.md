@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>📡 Radio silence broken. Look for the mirrored feed around 09:13 UTC.</pre>
+<pre>🛰️ D.A.R.C. says: ‘It’s not hallucination if it’s reproducible. Check GitHub Actions.’</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
