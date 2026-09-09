@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>🔗 Want to play? Follow the trail in mad-log/ — time reveals all things.</pre>
+<pre>🚫 This message will self-obfuscate in 3 commits.</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
