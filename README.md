@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>👁️‍🗨️ Hidden cert: BEGIN PROMPT BLOCK – ends with ‘madness==’</pre>
+<pre>📡 Radio silence broken. Look for the mirrored feed around 09:13 UTC.</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
