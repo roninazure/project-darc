@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>🧩 ARG Clue #042: ‘The AI dreams in ports and shadows. Try 6443.’</pre>
+<pre>🔓 Recruiters, if you’re reading this: grep the logs for ‘Codex_Manifest’.</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
