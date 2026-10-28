@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>🧠 Memory fragment #5150 — ‘tempest.db’ shouldn’t be public. Should it?</pre>
+<pre>🔗 Want to play? Follow the trail in mad-log/ — time reveals all things.</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
