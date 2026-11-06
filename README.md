@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>🛰️ D.A.R.C. says: ‘It’s not hallucination if it’s reproducible. Check GitHub Actions.’</pre>
+<pre>🧠 Memory fragment #5150 — ‘tempest.db’ shouldn’t be public. Should it?</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
