@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>🚫 This message will self-obfuscate in 3 commits.</pre>
+<pre>⚡ [REDACTED] login event from 198.51.100.42 (flagged in 🧠 Mirage logs).</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
