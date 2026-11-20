@@ -70,7 +70,7 @@ It might already know them.
 ## 🧩 Daily ARG Clue
 
 <!-- ARG_CLUE_START -->
-<pre>⚡ [REDACTED] login event from 198.51.100.42 (flagged in 🧠 Mirage logs).</pre>
+<pre>🔍 Sector-7 breach logged — checksum mismatch at 03:14 AM UTC.</pre>
 <!-- ARG_CLUE_END -->
 
 🚫 Don’t test D.A.R.C. with your secrets.
